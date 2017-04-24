@@ -1,0 +1,69 @@
+& {
+    font-weight: 400;
+    font-size: $font-size;
+    line-height: 1.5;
+    overflow: hidden;
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.25;
+        margin: 0;
+    }
+    h1 {
+        @include font-size(4.8);
+        padding: 0 $gutter;
+    }
+    h2 {
+         @include font-size(3.8);
+        padding: 0 $gutter;
+    }
+    h3 {
+        font-size: 3.2vw;
+        padding: 0 $gutter;
+    }
+    b,
+    strong {
+        font-weight: 700;
+    }
+    p {
+      @include font-size(1.8);
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .text-center {
+        text-align: center;
+    }
+ 
+    @for $i from 0 through 4 {
+        .air-top-#{$i} {
+            margin-top: $i*$air;
+        }
+        .air-left-#{$i} {
+            margin-left: $i*$air;
+        }
+        .air-right-#{$i} {
+            margin-right: $i*$air;
+        }
+        .air-#{$i} {
+            margin-bottom: $i*$air;
+        }
+    }
+}
+
+.table-container {
+    display: table;
+}
+
+.table-row {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-white {
+    color: white;
+}

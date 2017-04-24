@@ -1,0 +1,21 @@
+$air: 16px;
+$cols: 12;
+$font-size: 16px;
+$gutter: 15px;
+
+$color-button: #f6ea5e;
+$color-arrow: #979797;
+
+$xs: 380;
+$sm: 544;
+$md: 768;
+$lg: 1200;
+$xlg: 1920;
+
+$breakpoint: (
+	'xs': 0,
+	'sm': $sm,
+	'md': $md,
+	'lg': $lg,
+	'xlg': $xlg
+);

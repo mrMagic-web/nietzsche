@@ -1,0 +1,25 @@
+.n_top{
+  background-image: url('../img/nietzsche-kv.jpg');
+  background-size: contain;
+}
+
+
+@include screen($lg) {
+  
+
+}
+
+@include screen($md) {
+ 
+
+}
+
+@include screen($sm) {
+
+ 
+}
+
+@include screen($xs) {
+ 
+}
+

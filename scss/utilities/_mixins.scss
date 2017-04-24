@@ -1,0 +1,35 @@
+
+$units: 1px !default;
+
+@mixin screen($res-first, $res-last: $res-first) {
+	@if $res-first == $res-last {
+		@media screen and ( max-width: if(unitless($res-first), $res-first*$units, $res-first) ) { @content }
+	}
+	@else if $res-first < $res-last {
+		@media screen and ( min-width: if(unitless($res-first), $res-first*$units, $res-first) ) and ( max-width: if(unitless($res-last), $res-last*$units, $res-last) ) { @content }
+	}
+}
+
+@mixin min-screen($res) {
+	@media screen and ( min-width: if(unitless($res), $res*$units, $res) ) {
+		@content;
+	}
+}
+
+@mixin font_face($family_name, $file_name, $family_weight) {
+	@font-face {
+		font-family: $family_name;
+		font-style: normal;
+		font-weight: $family_weight;
+		src: url('../fonts/#{$file_name}.eot');
+		src: url('../fonts/#{$file_name}.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/#{$file_name}.svg##{$family_name}') format('svg'),
+		url('../fonts/#{$file_name}.woff') format('woff'),
+		url('../fonts/#{$file_name}.ttf') format('truetype');
+	}
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
