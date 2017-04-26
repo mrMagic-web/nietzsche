@@ -1,25 +1,102 @@
-.n_top{
-  background-image: url('../img/nietzsche-kv.jpg');
-  background-size: contain;
+&#nietzsche-2017 {
+    background-image: url('../img/nietzsche-kv.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-
-@include screen($lg) {
-  
-
+.n_title {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 0 $area-padding;
 }
 
-@include screen($md) {
- 
-
+.n_text {
+    padding: $area-padding;
 }
 
-@include screen($sm) {
-
- 
+.n_top {
+    h3 {
+        margin-top: 15%;
+    }
+    img {
+        max-width: 220px;
+        margin-top: $area-padding;
+    }
+    .n_title {
+        justify-content: center;
+    }
 }
 
-@include screen($xs) {
- 
+.n_section {
+    border: 5px solid black;
+    margin-bottom: 50px;
+    position: relative;
+    @include min-screen($lg) {
+        &.section-3 {
+            background: url('../img/nietzsche-s3.png') no-repeat;
+            background-position: bottom right;
+        }
+        &.section-5 {
+            background: url('../img/nietzsche-s4.png') no-repeat;
+            background-position: bottom right;
+        }
+    }
+    &.video {
+        padding: $area-padding;
+    }
+    .carousel {
+        .item {
+            img {
+                max-width: 30%;
+                display: block;
+                margin: auto;
+            }
+            .carousel-caption {
+                margin-top: $air*2;
+                p {
+                    @include font-size(1.8);
+                    color: $color-link;
+                    margin-bottom: 10px;
+                }
+                .btn {
+                    background-color: $color-button;
+                    text-transform: uppercase;
+                    padding-left: $air*2;
+                    padding-right: $air*2;
+                    img {
+                        width: 22px;
+                        display: inline-block;
+                        margin-top: -4px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+        .carousel-control {
+            .glyphicon {
+                top: 50%;
+                margin-top: -40px;
+                font-size: 80px;
+                color: $color-arrow;
+            }
+        }
+    }
 }
 
+.text-section {
+    background-color: black;
+    color: white;
+}
+
+@include screen($lg) {}
+
+@include screen($md) {}
+
+@include screen($sm) {}
+
+@include screen($xs) {}

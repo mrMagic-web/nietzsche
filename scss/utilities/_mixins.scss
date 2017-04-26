@@ -33,3 +33,6 @@ $units: 1px !default;
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
+
+	@include font-face('Lato Semi', 'lato-semibold', 500);
+	@include font-face('Lato Regular', 'lato-regular', 200);

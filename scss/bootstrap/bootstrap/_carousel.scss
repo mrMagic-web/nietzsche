@@ -105,14 +105,12 @@
   // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
-  // Set gradients for backgrounds
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+   
   }
   &.right {
     left: auto;
     right: 0;
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
   }
 
   // Hover/focus state
@@ -216,16 +214,13 @@
 // -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
+  position: relative;
   bottom: 20px;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: $carousel-caption-color;
   text-align: center;
-  text-shadow: $carousel-text-shadow;
+
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
   }
@@ -258,8 +253,6 @@
 
   // Show and left align the captions
   .carousel-caption {
-    left: 20%;
-    right: 20%;
     padding-bottom: 30px;
   }
 
