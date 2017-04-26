@@ -3972,6 +3972,14 @@
     background: url("../img/nietzsche-s4.png") no-repeat;
     background-position: bottom right;
   }
+  #nietzsche-2017 .n_section .bottom-image {
+    display: none;
+  }
+}
+#nietzsche-2017 .n_section .bottom-image {
+  float: right;
+  max-width: 400px;
+  margin-top: -7%;
 }
 #nietzsche-2017 .n_section.video {
   padding: 7%;

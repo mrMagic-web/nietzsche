@@ -53,6 +53,14 @@
             background: url('../img/nietzsche-s4.png') no-repeat;
             background-position: bottom right;
         }
+        .bottom-image{
+          display: none;
+        }
+    }
+    .bottom-image{
+      float: right;
+      max-width: 400px;
+      margin-top: -7%;
     }
     &.video {
         padding: $area-padding;
