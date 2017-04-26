@@ -1594,12 +1594,12 @@
 }
 @media (min-width: 992px) {
   #nietzsche-2017 .container {
-    width: 768px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   #nietzsche-2017 .container {
-    width: 1000px;
+    width: 1170px;
   }
 }
 #nietzsche-2017 .container-fluid {
@@ -3792,12 +3792,31 @@
   font-size: 38px;
   font-size: 3.8rem;
 }
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 h1 {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+}
 #nietzsche-2017 h2 {
   font-size: 22px;
   font-size: 2.2rem;
 }
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 h2 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
 #nietzsche-2017 h3 {
-  font-size: 3.2vw;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 h3 {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
 }
 #nietzsche-2017 b,
 #nietzsche-2017 strong {
@@ -3811,6 +3830,12 @@
 }
 #nietzsche-2017 p:not(:last-child) {
   margin-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 p {
+    font-size: 8px;
+    font-size: 0.8rem;
+  }
 }
 #nietzsche-2017 .uppercase {
   text-transform: uppercase;
@@ -3900,6 +3925,11 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  #nietzsche-2017#nietzsche-2017 {
+    background-size: auto 100vh;
+  }
+}
 #nietzsche-2017 .n_title {
   background-color: black;
   color: white;
@@ -3910,10 +3940,15 @@
   align-items: center;
   padding: 0 7%;
 }
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 .n_title {
+    height: 100px;
+  }
+}
 #nietzsche-2017 .n_text {
   padding: 7%;
 }
-#nietzsche-2017 .n_top h3 {
+#nietzsche-2017 .n_top h2.sub-title {
   margin-top: 15%;
 }
 #nietzsche-2017 .n_top img {
@@ -3942,7 +3977,7 @@
   padding: 7%;
 }
 #nietzsche-2017 .n_section .carousel .item img {
-  max-width: 30%;
+  max-width: 45%;
   display: block;
   margin: auto;
 }
@@ -3953,13 +3988,13 @@
   font-size: 18px;
   font-size: 1.8rem;
   color: #232eb4;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 #nietzsche-2017 .n_section .carousel .item .carousel-caption .btn {
   background-color: #f6ea5e;
   text-transform: uppercase;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 16px 48px;
+  font-size: 1.8em;
 }
 #nietzsche-2017 .n_section .carousel .item .carousel-caption .btn img {
   width: 22px;
@@ -3968,10 +4003,15 @@
   margin-left: 16px;
 }
 #nietzsche-2017 .n_section .carousel .carousel-control .glyphicon {
-  top: 50%;
-  margin-top: -40px;
-  font-size: 80px;
+  top: 40%;
+  font-size: 12vw;
   color: #979797;
+  width: 12vw;
+}
+@media screen and (max-width: 768px) {
+  #nietzsche-2017 .n_section .carousel .carousel-control .glyphicon {
+    top: 24%;
+  }
 }
 #nietzsche-2017 .text-section {
   background-color: black;
