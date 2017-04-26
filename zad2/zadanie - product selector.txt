@@ -1,0 +1,14 @@
+Zadanie polega na zakodowaniu prostego modułu wykorzystującego JavaScipt, który na podstawie udzielonych przez użytkownika odpowiedzi pokazuje konkretny produkt. 
+Pokazywany produkt ma zawierać nazwę oraz link pobierane z obiektu JSON znajdującego się wewnątrz skryptu (konkretne wartości są dowolne). 
+
+Schemat działania:
+Zaznaczona ODPOWIEDŹ 1 daje 1 punkt,
+Zaznaczona ODPOWIEDŹ 2 daje 2 punkty,
+Zaznaczona ODPOWIEDŹ 3 daje 3 punkty,
+Zaznaczona ODPOWIEDŹ 4 daje 4 punkty.
+
+PRODUKT 1 pokazuje się, gdy punktów mamy mniej niż 3, 
+PRODUKT 2 pokazuje się, gdy punktów mamy 3 lub 4, 
+PRODUKT 3 pokazuje się, gdy punktów mamy 5 i więcej, chyba że zaznaczymy odpowiedzi 2 i 4, bez 1 i 3 - w takim wyjątkowym wypadku powinien pokazać się PRODUKT 1.
+
+Do tego zadania można używać jQuery, etc. Markup HTML może być symboliczny (czyli np. kolorowe divy). 
