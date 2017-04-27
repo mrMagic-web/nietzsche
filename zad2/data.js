@@ -1,7 +1,5 @@
  var products = {
-
-     "product1": "Ford",
-     "product2": "BMW",
-     "product3": "Audi",
-
+    "product1": "P1 Showing",
+    "product2": "P2 Showing",
+    "product3": "P3 Showing",
  }
