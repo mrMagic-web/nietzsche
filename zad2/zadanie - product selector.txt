@@ -1,4 +1,4 @@
-﻿;Zadanie polega na zakodowaniu prostego modułu wykorzystującego JavaScipt, który na podstawie udzielonych przez użytkownika odpowiedzi pokazuje konkretny produkt. 
+Zadanie polega na zakodowaniu prostego modułu wykorzystującego JavaScipt, który na podstawie udzielonych przez użytkownika odpowiedzi pokazuje konkretny produkt. 
 Pokazywany produkt ma zawierać nazwę oraz link pobierane z obiektu JSON znajdującego się wewnątrz skryptu (konkretne wartości są dowolne). 
 
 Schemat działania:

@@ -2,19 +2,61 @@
 <html>
 
 <head>
+<style>
+	#form{
+		padding: 30px;
+		background-color: black;
+		color: white;
+		text-align: center;
+		display: block;
+		margin: auto;
+		}
+	#form > input{
+		margin: 10px;
+	}	
+	.product{
+		display: block;
+		margin: auto;
+		width: 300px; 
+		text-align: center;
+	}
+	.product > header{
+		padding: 70px;
+		display: block;
+		color: white;
+		text-align: center;
+	}
+	.p1{
+		background-color: #BCB841;
+	}
+	.p2{
+		background-color: #33643F;
+	}
+	.p3{
+		background-color: #C07024;
+	}
+	
+</style>
 </head>
 <body>
 
 <section>
-	<form>
-  <p>
+	<form id='form'>
+
+  <p> Please select some of the options</p>
     <input type="checkbox" name="products" value="1">
     <input type="checkbox" name="products" value="2">
     <input type="checkbox" name="products" value="3">
     <input type="checkbox" name="products" value="4">
-  </p>
+
 </form>
-		<div class="output"></div>
+		<div class="product">
+
+			<header id="#item">
+				<div class="output"></div>
+			</header>
+			
+		</div>
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
